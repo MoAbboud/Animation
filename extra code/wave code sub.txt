@@ -1,0 +1,92 @@
+.wave2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: calc(80%);
+    transition: all 5s;
+    z-index: -1;
+}
+
+.wave2::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 22px;
+    top: -22px;
+    left: 0;
+    top: calc(80%);
+    transition: all 5s;
+    z-index: -1;
+    background: url(../Pictures/wave.png);
+    animation: wave 1.5 linear infinite;
+}
+
+@keyframes wave {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 118px;
+    }
+}
+
+.wave {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #3586ff;
+    overflow: hidden;
+}
+
+.wave .innerwaves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../Pictures/wave.png);
+}
+
+.wave .innerwaves.wave1 {
+    animation: wavey_motion 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+.wave .innerwaves.wave2 {
+    animation: wavey_motion 8s linear infinite reverse;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -2;
+    bottom: 10px;
+}
+
+.wave .innerwaves.wave3 {
+    animation: wavey_motion 15s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -1;
+    bottom: 15px;
+}
+
+.wave .innerwaves.wave4 {
+    animation: wavey_motion 10s linear infinite reverse;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -2;
+    bottom: 20px;
+}
+
+@keyframes wavey_motion {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}

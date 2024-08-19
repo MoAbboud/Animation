@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquama - Our History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+        .timeline__line {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 4px;
+            background-color: purple;
+            opacity: 0.7;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .timeline__event {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .timeline__date {
+            flex: 0 0 80px;
+            background-color: rgba(0, 0, 255, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            border-radius: 10px;
+            z-index: 2;
+        }
+
+        .timeline__date.right {
+            transform: translateX(-50%) rotate(180deg);
+        }
+
+        .timeline__content {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 50px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .timeline__content h2 {
+            color: #333;
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        .timeline__content p {
+            color: #555;
+            margin: 0;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer p {
+            color: #fff;
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="timeline">
+            <div class="timeline__line"></div>
+            <div class="timeline__event">
+                <div class="timeline__date">2004</div>
+                <div class="timeline__content">
+                    <h2>Company Foundation</h2>
+                    <p>Aquama was founded in 2004 with a vision to revolutionize water treatment and desalination using renewable energy sources.</p>
+                </div>
+            </div>
+
+            <div class="timeline__event">
+                <div class="timeline__date right">2008</div>
+                <div class="timeline__content">
+                    <h2>Breakthrough Innovation</h2>
+                    <p>Aquama achieved a breakthrough innovation by developing a cost-effective desalination process using thermal forward osmosis technology.</p>
+                </div>
+            </div>
+
+            <div class="timeline__event">
+                <div class="timeline__date">2012</div>
+                <div class="timeline__content">
+                    <h2>Expansion to Global Markets</h2>
+                    <p>Aquama expanded its operations globally, providing sustainable water treatment solutions to communities around the world.</p>
+                </div>
+            </div>
+
+            <div class="timeline__event">
+                <div class="timeline__date right">2018</div>
+                <div class="timeline__content">
+                    <h2>Industry Recognition</h2>
+                    <p>Aquama received multiple industry awards for its contributions to renewable energy-powered desalination technologies.</p>
+                </div>
+            </div>
+
+            <div class="timeline__event">
+                <div class="timeline__date">2021</div>
+                <div class="timeline__content">
+                    <h2>Leading the Way in Sustainability</h2>
+                    <p>Aquama continues to lead the way in sustainable water treatment, making clean drinking water accessible to all.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Aquama. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
