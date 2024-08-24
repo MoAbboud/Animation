@@ -61,6 +61,40 @@
                 logo.style.transform = "scale(1) translate(100%, 50%)";
             }, 1500);
         });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Script is running'); // Added for debugging
+
+            function createAnt() {
+                const ant = document.createElement('div');
+                ant.classList.add('ant');
+                document.body.appendChild(ant);
+                return ant;
+            }
+
+            function animateAnt(ant) {
+                const startX = Math.random() * window.innerWidth;
+                const startY = Math.random() * window.innerHeight;
+                const endX = Math.random() * window.innerWidth;
+                const endY = Math.random() * window.innerHeight;
+                const duration = 5000 + Math.random() * 5000;
+
+                ant.style.left = `${startX}px`;
+                ant.style.top = `${startY}px`;
+
+                ant.animate([
+                    { transform: `translate(${endX - startX}px, ${endY - startY}px)` }
+                ], {
+                    duration: duration,
+                    iterations: Infinity
+                });
+            }
+
+            for (let i = 0; i < 10; i++) {
+                const ant = createAnt();
+                animateAnt(ant);
+            }
+        });
     </script>
 
 </head>
@@ -85,10 +119,18 @@
                     </div>
                     <div class="collapse navbar-collapse" id="navbar-primary-collapse">
                         <ul class="nav navbar-nav">
-                            <li><a class="watercontainer" href="#"><span class="overlaywave">Home</span><div class="waveIcon"></div></a></li>
-                            <li><a class="watercontainer" href="#"><span class="overlaywave">Water</span><div class="waveIcon"></div></a></li>
-                            <li><a class="watercontainer" href="#"><span class="overlaywave">H20</span><div class="waveIcon"></div></a></li>
-                            <li><a class="watercontainer" href="#"><span class="overlaywave">Ocean</span><div class="waveIcon"></div></a></li>
+                            <li><a class="watercontainer" href="#"><span class="overlaywave">Home</span>
+                                    <div class="waveIcon"></div>
+                                </a></li>
+                            <li><a class="watercontainer" href="#"><span class="overlaywave">Water</span>
+                                    <div class="waveIcon"></div>
+                                </a></li>
+                            <li><a class="watercontainer" href="#"><span class="overlaywave">H20</span>
+                                    <div class="waveIcon"></div>
+                                </a></li>
+                            <li><a class="watercontainer" href="#"><span class="overlaywave">Ocean</span>
+                                    <div class="waveIcon"></div>
+                                </a></li>
                         </ul>
                     </div>
                 </div>

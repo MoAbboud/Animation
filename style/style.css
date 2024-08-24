@@ -1662,3 +1662,11 @@ only screen and (min-width: 125em) {
         width: 100%
     }
 }
+
+.ant {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
