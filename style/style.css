@@ -1665,9 +1665,12 @@ only screen and (min-width: 125em) {
 
 .ant {
     position: absolute;
-    width: 40px; /* Adjust the size as needed */
-    height: 40px; /* Adjust the size as needed */
-    background-image: url('path/to/your/ant-image.gif'); /* Replace with your image path */
+    width: 40px;
+    /* Adjust the size as needed */
+    height: 40px;
+    /* Adjust the size as needed */
+    background-image: url('path/to/your/ant-image.gif');
+    /* Replace with your image path */
     background-size: cover;
     border-radius: 50%;
 }
@@ -1677,25 +1680,31 @@ body {
     text-align: center;
     background: radial-gradient(ellipse at center, rgba(146, 158, 186, 1) 0%, rgba(113, 126, 157, 1) 100%);
 }
+
 h2 {
     font-size: 3.5vmax;
 }
+
 h2 span {
     display: block;
     font-size: 1.5vmax;
     color: #333;
 }
+
 h2 a {
     text-decoration: none;
     color: #339;
 }
+
 h3 {
     font-size: 2vmax;
     color: #aaa;
 }
+
 h3 a {
     color: #1d7daa;
 }
+
 .floor {
     margin: 0 auto;
     display-inline: block;
@@ -1709,6 +1718,7 @@ h3 a {
     animation: floor-move 0.69s linear infinite;
     border: 2px solid rgba(0, 0, 0, 0.3);
 }
+
 .ant {
     position: relative;
     margin: 0 auto;
@@ -1721,6 +1731,7 @@ h3 a {
     animation: body-move 0.345s linear infinite;
     filter: drop-shadow(12px 6px 5px rgba(0, 0, 0, .5));
 }
+
 .ant .head {
     position: absolute;
     width: 38px;
@@ -1733,8 +1744,10 @@ h3 a {
     transform-origin: bottom center;
     animation: head-move 0.69s ease-in-out infinite;
 }
-.ant .head:before, .ant .head:after {
-   /* Eyes */
+
+.ant .head:before,
+.ant .head:after {
+    /* Eyes */
     position: absolute;
     content: "";
     width: 12px;
@@ -1744,24 +1757,29 @@ h3 a {
     background-size: 3px 3px;
     border-radius: 50%;
 }
+
 .ant .head:before {
     left: 3px;
     transform: rotate(35deg);
     box-shadow: inset 2px 1px 5px rgba(0, 0, 0, .5);
     background-image: repeating-linear-gradient(-135deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) 1px, transparent 2px, transparent 2px, rgba(0, 0, 0, .5) 3px);
 }
+
 .ant .head:after {
     right: 3px;
     transform: rotate(-35deg);
     box-shadow: inset -2px 1px 5px rgba(0, 0, 0, .5);
     background-image: repeating-linear-gradient(135deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) 1px, transparent 2px, transparent 2px, rgba(0, 0, 0, .5) 3px);
 }
+
 .ant .head .mandibles {
     z-index: -1;
     width: inherit;
     position: absolute;
 }
-.ant .head .mandibles:before, .ant .head .mandibles:after {
+
+.ant .head .mandibles:before,
+.ant .head .mandibles:after {
     position: absolute;
     content: "";
     width: 17px;
@@ -1769,15 +1787,18 @@ h3 a {
     top: -7px;
     animation: mandibles-move 0.69s steps(2) infinite;
 }
+
 .ant .head .mandibles:before {
     background: radial-gradient(ellipse at bottom right, rgba(59, 61, 66, 1) 0%, rgba(0, 0, 0, 1) 100%);
     border-top-left-radius: 100%;
 }
+
 .ant .head .mandibles:after {
     background: radial-gradient(ellipse at bottom left, rgba(59, 61, 66, 1) 0%, rgba(0, 0, 0, 1) 100%);
     right: 0;
     border-top-right-radius: 100%;
 }
+
 .ant .head .antlerleft {
     position: absolute;
     width: 25px;
@@ -1788,6 +1809,7 @@ h3 a {
     transform-origin: center right;
     transform: rotate(30deg);
 }
+
 .ant .head .antlerleft:before {
     position: absolute;
     content: "";
@@ -1802,6 +1824,7 @@ h3 a {
     transform: rotate(30deg);
     box-shadow: 1px -1px 1px rgba(0, 0, 0, .5);
 }
+
 .ant .head .antlerright {
     position: absolute;
     width: 25px;
@@ -1812,6 +1835,7 @@ h3 a {
     transform-origin: center left;
     transform: rotate(-30deg);
 }
+
 .ant .head .antlerright:before {
     position: absolute;
     content: "";
@@ -1826,6 +1850,7 @@ h3 a {
     transform: rotate(-30deg);
     box-shadow: -1px -1px 1px rgba(0, 0, 0, .5);
 }
+
 .ant .body {
     position: absolute;
     width: 30px;
@@ -1836,11 +1861,14 @@ h3 a {
     background-image: radial-gradient(ellipse at center, rgba(59, 61, 66, 1) 0%, rgba(0, 0, 0, 1) 100%);
     border-radius: 50%;
 }
-.ant .body:before, .ant .body:after {
+
+.ant .body:before,
+.ant .body:after {
     position: absolute;
     content: "";
     background-color: black;
 }
+
 .ant .body:before {
     width: 18px;
     height: 25px;
@@ -1849,6 +1877,7 @@ h3 a {
     left: 6px;
     background-image: radial-gradient(ellipse at top, rgba(59, 61, 66, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
+
 .ant .body:after {
     width: 8px;
     height: 16px;
@@ -1856,12 +1885,14 @@ h3 a {
     left: 11px;
     background-image: radial-gradient(ellipse at center, rgba(59, 61, 66, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
+
 .ant .body .legs {
     position: absolute;
     z-index: -1;
     top: 5px;
     left: 12px;
 }
+
 .ant .body .legs .leg {
     position: absolute;
     width: 6px;
@@ -1870,6 +1901,7 @@ h3 a {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(70, 73, 78, 1) 50%, rgba(56, 58, 62, 1) 50%, rgba(0, 0, 0, 1) 100%);
     transform-origin: center right;
 }
+
 .ant .body .legs .leg .segment {
     position: absolute;
     width: 45px;
@@ -1881,88 +1913,115 @@ h3 a {
     transform-origin: center right;
     animation: none 0.69s linear infinite;
 }
+
 .ant .body .legs .leg .segment .segment {
     height: 4px;
 }
+
 .ant .body .legs .leg .segment .segment .segment {
     height: 2px;
 }
+
 .ant .body .legs .frontleft {
     display: block;
     top: 10px;
 }
+
 .ant .body .legs .frontleft .segment {
     animation-name: front-left-segment1;
 }
+
 .ant .body .legs .frontleft .segment .segment {
     animation-name: front-left-segment2;
 }
+
 .ant .body .legs .frontleft .segment .segment .segment {
     animation-name: front-left-segment3;
 }
+
 .ant .body .legs .centerleft {
     top: 23px;
 }
+
 .ant .body .legs .centerleft .segment {
     animation-name: center-left-segment1;
 }
+
 .ant .body .legs .centerleft .segment .segment {
     animation-name: center-left-segment2;
 }
+
 .ant .body .legs .centerleft .segment .segment .segment {
     animation-name: center-left-segment3;
 }
+
 .ant .body .legs .backleft {
     top: 30px;
 }
+
 .ant .body .legs .backleft .segment {
     animation-name: back-left-segment1;
 }
+
 .ant .body .legs .backleft .segment .segment {
     animation-name: back-left-segment2;
 }
+
 .ant .body .legs .backleft .segment .segment .segment {
     animation-name: back-left-segment3;
 }
+
 .ant .body .legs .frontright {
     top: 10px;
     transform: rotate(180deg);
 }
+
 .ant .body .legs .frontright .segment {
     animation-name: front-right-segment1;
 }
+
 .ant .body .legs .frontright .segment .segment {
     animation-name: front-right-segment2;
 }
+
 .ant .body .legs .frontright .segment .segment .segment {
     animation-name: front-right-segment3;
 }
+
 .ant .body .legs .centerright {
     top: 23px;
     transform: rotate(180deg);
 }
+
 .ant .body .legs .centerright .segment {
     animation-name: center-right-segment1;
 }
+
 .ant .body .legs .centerright .segment .segment {
     animation-name: center-rightt-segment2;
 }
+
 .ant .body .legs .centerright .segment .segment .segment {
     animation-name: center-right-segment3;
 }
+
 .ant .body .legs .backright {
     top: 30px;
     transform: rotate(180deg);
 }
+
 .ant .body .legs .backright .segment {
     animation-name: back-right-segment1;
 }
+
 .ant .body .legs .backright .segment .segment {
     animation-name: back-right-segment2;
 }
+
 .ant .body .legs .backright .segment .segment .segment {
     animation-name: back-right-segment3;
 }
+
 .ant .tail {
     position: absolute;
     width: 40px;
@@ -1975,207 +2034,295 @@ h3 a {
     transform-origin: top center;
     animation: tail-move 0.69s ease-in-out infinite;
 }
+
 /* Leg Tripod L */
 @keyframes front-left-segment1 {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotate(50deg);
-   }
+    }
+
     50% {
         transform: rotate(22deg) scaleX(0.7);
-   }
+    }
+
     75% {
         transform: rotate(36deg) scaleX(0.5);
-   }
+    }
 }
+
 @keyframes front-left-segment2 {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotate(0deg);
-   }
+    }
+
     50% {
         transform: rotate(-30deg);
-   }
+    }
 }
+
 @keyframes front-left-segment3 {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotate(0deg);
-   }
+    }
+
     50% {
         transform: rotate(30deg);
-   }
+    }
 }
+
 @keyframes center-right-segment1 {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotate(-20deg);
-   }
+    }
+
     50% {
         transform: rotate(30deg);
-   }
+    }
+
     75% {
         transform: rotate(-10deg) scaleX(0.5);
-   }
+    }
 }
+
 @keyframes center-right-segment2 {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotate(0deg);
-   }
+    }
+
     50% {
         transform: rotate(-10deg);
-   }
+    }
 }
+
 @keyframes center-right-segment3 {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotate(0deg);
-   }
+    }
+
     50% {
         transform: rotate(-10deg);
-   }
+    }
 }
+
 @keyframes back-left-segment1 {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotate(-20deg) scaleX(0.7);
-   }
+    }
+
     50% {
         transform: rotate(-50deg);
-   }
+    }
+
     75% {
         transform: rotate(-50deg) scaleX(0.5);
-   }
+    }
 }
+
 @keyframes back-left-segment2 {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotate(0deg);
-   }
+    }
+
     50% {
         transform: rotate(-13deg);
-   }
+    }
 }
+
 @keyframes back-left-segment3 {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotate(0deg);
-   }
+    }
+
     50% {
         transform: rotate(10deg);
-   }
+    }
 }
+
 /* Leg Tripod R */
 @keyframes front-right-segment1 {
     50% {
         transform: rotate(-50deg);
-   }
-    0%, 100% {
+    }
+
+    0%,
+    100% {
         transform: rotate(-22deg) scaleX(0.7);
-   }
+    }
+
     25% {
         transform: rotate(-36deg) scaleX(0.5);
-   }
+    }
 }
+
 @keyframes front-right-segment2 {
     50% {
         transform: rotate(0deg);
-   }
-    0%, 100% {
+    }
+
+    0%,
+    100% {
         transform: rotate(30deg);
-   }
+    }
 }
+
 @keyframes front-right-segment3 {
     50% {
         transform: rotate(0deg);
-   }
-    0%, 100% {
+    }
+
+    0%,
+    100% {
         transform: rotate(-30deg);
-   }
+    }
 }
+
 @keyframes center-left-segment1 {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotate(-30deg);
-   }
+    }
+
     25% {
         transform: rotate(10deg) scaleX(0.5);
-   }
+    }
+
     50% {
         transform: rotate(20deg);
-   }
+    }
 }
+
 @keyframes center-left-segment2 {
     50% {
         transform: rotate(0deg);
-   }
-    0%, 100% {
+    }
+
+    0%,
+    100% {
         transform: rotate(-10deg);
-   }
+    }
 }
+
 @keyframes center-left-segment3 {
     50% {
         transform: rotate(0deg);
-   }
-    0%, 100% {
+    }
+
+    0%,
+    100% {
         transform: rotate(10deg);
-   }
+    }
 }
+
 @keyframes back-right-segment1 {
     50% {
         transform: rotate(20deg) scaleX(0.7);
-   }
-    0%, 100% {
+    }
+
+    0%,
+    100% {
         transform: rotate(50deg);
-   }
+    }
+
     25% {
         transform: rotate(50deg) scaleX(0.5);
-   }
+    }
 }
+
 @keyframes back-right-segment2 {
     50% {
         transform: rotate(0deg);
-   }
-    0%, 100% {
+    }
+
+    0%,
+    100% {
         transform: rotate(13deg);
-   }
+    }
 }
+
 @keyframes back-right-segment3 {
     50% {
         transform: rotate(0deg);
-   }
-    0%, 100% {
+    }
+
+    0%,
+    100% {
         transform: rotate(-10deg);
-   }
+    }
 }
+
 @keyframes head-move {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateX(-3px) rotate(3deg);
-   }
+    }
+
     50% {
         transform: translateX(3px) rotate(-3deg);
-   }
+    }
 }
+
 @keyframes mandibles-move {
-    0%, 100% {
+
+    0%,
+    100% {
         width: 17px;
-   }
+    }
+
     50% {
         width: 18px;
-   }
+    }
 }
+
 @keyframes body-move {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0px);
-   }
+    }
+
     50% {
         transform: translateY(2px);
-   }
+    }
 }
+
 @keyframes tail-move {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotate(5deg);
-   }
+    }
+
     50% {
         transform: rotate(-5deg);
-   }
+    }
 }
+
 @keyframes floor-move {
     0% {
         background-position: 0 0;
-   }
+    }
+
     100% {
         background-position: 0 100%;
-   }
+    }
 }
