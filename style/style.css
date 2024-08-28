@@ -1675,39 +1675,10 @@ only screen and (min-width: 125em) {
     border-radius: 50%;
 }
 
-body {
-    font: normal 80% Arial;
-    text-align: center;
-    background: radial-gradient(ellipse at center, rgba(146, 158, 186, 1) 0%, rgba(113, 126, 157, 1) 100%);
-}
-
-h2 {
-    font-size: 3.5vmax;
-}
-
-h2 span {
-    display: block;
-    font-size: 1.5vmax;
-    color: #333;
-}
-
-h2 a {
-    text-decoration: none;
-    color: #339;
-}
-
-h3 {
-    font-size: 2vmax;
-    color: #aaa;
-}
-
-h3 a {
-    color: #1d7daa;
-}
 
 .floor {
     margin: 0 auto;
-    display-inline: block;
+    display: inline-block;
     text-align: left;
     width: 60%;
     min-width: 300px;
@@ -1722,7 +1693,7 @@ h3 a {
 .ant {
     position: relative;
     margin: 0 auto;
-    display-inline: block;
+    display: inline-block;
     text-align: left;
     width: 250px;
     height: 250px;
@@ -1732,7 +1703,7 @@ h3 a {
     filter: drop-shadow(12px 6px 5px rgba(0, 0, 0, .5));
 }
 
-.ant .head {
+.ant .head-ant {
     position: absolute;
     width: 38px;
     height: 45px;
@@ -1745,8 +1716,8 @@ h3 a {
     animation: head-move 0.69s ease-in-out infinite;
 }
 
-.ant .head:before,
-.ant .head:after {
+.ant .head-ant:before,
+.ant .head-ant:after {
     /* Eyes */
     position: absolute;
     content: "";
@@ -1758,28 +1729,28 @@ h3 a {
     border-radius: 50%;
 }
 
-.ant .head:before {
+.ant .head-ant:before {
     left: 3px;
     transform: rotate(35deg);
     box-shadow: inset 2px 1px 5px rgba(0, 0, 0, .5);
     background-image: repeating-linear-gradient(-135deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) 1px, transparent 2px, transparent 2px, rgba(0, 0, 0, .5) 3px);
 }
 
-.ant .head:after {
+.ant .head-ant:after {
     right: 3px;
     transform: rotate(-35deg);
     box-shadow: inset -2px 1px 5px rgba(0, 0, 0, .5);
     background-image: repeating-linear-gradient(135deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) 1px, transparent 2px, transparent 2px, rgba(0, 0, 0, .5) 3px);
 }
 
-.ant .head .mandibles {
+.ant .head-ant .mandibles {
     z-index: -1;
     width: inherit;
     position: absolute;
 }
 
-.ant .head .mandibles:before,
-.ant .head .mandibles:after {
+.ant .head-ant .mandibles:before,
+.ant .head-ant .mandibles:after {
     position: absolute;
     content: "";
     width: 17px;
@@ -1788,18 +1759,18 @@ h3 a {
     animation: mandibles-move 0.69s steps(2) infinite;
 }
 
-.ant .head .mandibles:before {
+.ant .head-ant .mandibles:before {
     background: radial-gradient(ellipse at bottom right, rgba(59, 61, 66, 1) 0%, rgba(0, 0, 0, 1) 100%);
     border-top-left-radius: 100%;
 }
 
-.ant .head .mandibles:after {
+.ant .head-ant .mandibles:after {
     background: radial-gradient(ellipse at bottom left, rgba(59, 61, 66, 1) 0%, rgba(0, 0, 0, 1) 100%);
     right: 0;
     border-top-right-radius: 100%;
 }
 
-.ant .head .antlerleft {
+.ant .head-ant .antlerleft {
     position: absolute;
     width: 25px;
     height: 3px;
@@ -1810,7 +1781,7 @@ h3 a {
     transform: rotate(30deg);
 }
 
-.ant .head .antlerleft:before {
+.ant .head-ant .antlerleft:before {
     position: absolute;
     content: "";
     width: 26px;
@@ -1825,7 +1796,7 @@ h3 a {
     box-shadow: 1px -1px 1px rgba(0, 0, 0, .5);
 }
 
-.ant .head .antlerright {
+.ant .head-ant .antlerright {
     position: absolute;
     width: 25px;
     height: 3px;
@@ -1836,7 +1807,7 @@ h3 a {
     transform: rotate(-30deg);
 }
 
-.ant .head .antlerright:before {
+.ant .head-ant .antlerright:before {
     position: absolute;
     content: "";
     width: 26px;
@@ -1851,7 +1822,7 @@ h3 a {
     box-shadow: -1px -1px 1px rgba(0, 0, 0, .5);
 }
 
-.ant .body {
+.ant .body-ant {
     position: absolute;
     width: 30px;
     height: 35px;
@@ -1862,14 +1833,14 @@ h3 a {
     border-radius: 50%;
 }
 
-.ant .body:before,
-.ant .body:after {
+.ant .body-ant:before,
+.ant .body-ant:after {
     position: absolute;
     content: "";
     background-color: black;
 }
 
-.ant .body:before {
+.ant .body-ant:before {
     width: 18px;
     height: 25px;
     border-radius: 45%;
@@ -1878,7 +1849,7 @@ h3 a {
     background-image: radial-gradient(ellipse at top, rgba(59, 61, 66, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
-.ant .body:after {
+.ant .body-ant:after {
     width: 8px;
     height: 16px;
     top: 45px;
@@ -1886,14 +1857,14 @@ h3 a {
     background-image: radial-gradient(ellipse at center, rgba(59, 61, 66, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
-.ant .body .legs {
+.ant .body-ant .legs {
     position: absolute;
     z-index: -1;
     top: 5px;
     left: 12px;
 }
 
-.ant .body .legs .leg {
+.ant .body-ant .legs .leg {
     position: absolute;
     width: 6px;
     height: 6px;
@@ -1902,7 +1873,7 @@ h3 a {
     transform-origin: center right;
 }
 
-.ant .body .legs .leg .segment {
+.ant .body-ant .legs .leg .segment {
     position: absolute;
     width: 45px;
     height: 6px;
@@ -1914,111 +1885,111 @@ h3 a {
     animation: none 0.69s linear infinite;
 }
 
-.ant .body .legs .leg .segment .segment {
+.ant .body-ant .legs .leg .segment .segment {
     height: 4px;
 }
 
-.ant .body .legs .leg .segment .segment .segment {
+.ant .body-ant .legs .leg .segment .segment .segment {
     height: 2px;
 }
 
-.ant .body .legs .frontleft {
+.ant .body-ant .legs .frontleft {
     display: block;
     top: 10px;
 }
 
-.ant .body .legs .frontleft .segment {
+.ant .body-ant .legs .frontleft .segment {
     animation-name: front-left-segment1;
 }
 
-.ant .body .legs .frontleft .segment .segment {
+.ant .body-ant .legs .frontleft .segment .segment {
     animation-name: front-left-segment2;
 }
 
-.ant .body .legs .frontleft .segment .segment .segment {
+.ant .body-ant .legs .frontleft .segment .segment .segment {
     animation-name: front-left-segment3;
 }
 
-.ant .body .legs .centerleft {
+.ant .body-ant .legs .centerleft {
     top: 23px;
 }
 
-.ant .body .legs .centerleft .segment {
+.ant .body-ant .legs .centerleft .segment {
     animation-name: center-left-segment1;
 }
 
-.ant .body .legs .centerleft .segment .segment {
+.ant .body-ant .legs .centerleft .segment .segment {
     animation-name: center-left-segment2;
 }
 
-.ant .body .legs .centerleft .segment .segment .segment {
+.ant .body-ant .legs .centerleft .segment .segment .segment {
     animation-name: center-left-segment3;
 }
 
-.ant .body .legs .backleft {
+.ant .body-ant .legs .backleft {
     top: 30px;
 }
 
-.ant .body .legs .backleft .segment {
+.ant .body-ant .legs .backleft .segment {
     animation-name: back-left-segment1;
 }
 
-.ant .body .legs .backleft .segment .segment {
+.ant .body-ant .legs .backleft .segment .segment {
     animation-name: back-left-segment2;
 }
 
-.ant .body .legs .backleft .segment .segment .segment {
+.ant .body-ant .legs .backleft .segment .segment .segment {
     animation-name: back-left-segment3;
 }
 
-.ant .body .legs .frontright {
+.ant .body-ant .legs .frontright {
     top: 10px;
     transform: rotate(180deg);
 }
 
-.ant .body .legs .frontright .segment {
+.ant .body-ant .legs .frontright .segment {
     animation-name: front-right-segment1;
 }
 
-.ant .body .legs .frontright .segment .segment {
+.ant .body-ant .legs .frontright .segment .segment {
     animation-name: front-right-segment2;
 }
 
-.ant .body .legs .frontright .segment .segment .segment {
+.ant .body-ant .legs .frontright .segment .segment .segment {
     animation-name: front-right-segment3;
 }
 
-.ant .body .legs .centerright {
+.ant .body-ant .legs .centerright {
     top: 23px;
     transform: rotate(180deg);
 }
 
-.ant .body .legs .centerright .segment {
+.ant .body-ant .legs .centerright .segment {
     animation-name: center-right-segment1;
 }
 
-.ant .body .legs .centerright .segment .segment {
+.ant .body-ant .legs .centerright .segment .segment {
     animation-name: center-rightt-segment2;
 }
 
-.ant .body .legs .centerright .segment .segment .segment {
+.ant .body-ant .legs .centerright .segment .segment .segment {
     animation-name: center-right-segment3;
 }
 
-.ant .body .legs .backright {
+.ant .body-ant .legs .backright {
     top: 30px;
     transform: rotate(180deg);
 }
 
-.ant .body .legs .backright .segment {
+.ant .body-ant .legs .backright .segment {
     animation-name: back-right-segment1;
 }
 
-.ant .body .legs .backright .segment .segment {
+.ant .body-ant .legs .backright .segment .segment {
     animation-name: back-right-segment2;
 }
 
-.ant .body .legs .backright .segment .segment .segment {
+.ant .body-ant .legs .backright .segment .segment .segment {
     animation-name: back-right-segment3;
 }
 
