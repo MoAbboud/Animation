@@ -68,7 +68,37 @@
             function createAnt() {
                 const ant = document.createElement('div');
                 ant.classList.add('ant');
-                document.body.appendChild(ant);
+                ant.innerHTML = `
+                    <div class="head">
+                        <div class="mandibles"></div>
+                        <div class="antlerleft"></div>
+                        <div class="antlerright"></div>
+                    </div>
+                    <div class="body">
+                        <div class="legs">
+                            <div class="leg frontleft">
+                                <div class="segment"><div class="segment"><div class="segment"></div></div></div>
+                            </div>
+                            <div class="leg frontright">
+                                <div class="segment"><div class="segment"><div class="segment"></div></div></div>
+                            </div>
+                            <div class="leg centerleft">
+                                <div class="segment"><div class="segment"><div class="segment"></div></div></div>
+                            </div>
+                            <div class="leg centerright">
+                                <div class="segment"><div class="segment"><div class="segment"></div></div></div>
+                            </div>
+                            <div class="leg backleft">
+                                <div class="segment"><div class="segment"><div class="segment"></div></div></div>
+                            </div>
+                            <div class="leg backright">
+                                <div class="segment"><div class="segment"><div class="segment"></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tail"></div>
+                `;
+                document.querySelector('.floor').appendChild(ant);
                 return ant;
             }
 
