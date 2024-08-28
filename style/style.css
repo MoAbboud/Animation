@@ -2297,3 +2297,8 @@ only screen and (min-width: 125em) {
         background-position: 0 100%;
     }
 }
+
+.scaled-ant {
+    transform: scale(0.25);
+    transform-origin: top left; /* Adjust the origin as needed */
+}
