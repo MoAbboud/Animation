@@ -1665,16 +1665,18 @@ only screen and (min-width: 125em) {
 
 .ant {
     position: absolute;
-    width: 40px;
+    width: 10px;
     /* Adjust the size as needed */
-    height: 40px;
-    /* Adjust the size as needed */
-    background-image: url('path/to/your/ant-image.gif');
+    height: 10px;
     /* Replace with your image path */
     background-size: cover;
     border-radius: 50%;
 }
 
+.scaled-ant {
+    transform: scale(0.25);
+    transform-origin: top left; /* Adjust the origin as needed */
+}
 
 .floor {
     margin: 0 auto;
@@ -2296,9 +2298,4 @@ only screen and (min-width: 125em) {
     100% {
         background-position: 0 100%;
     }
-}
-
-.scaled-ant {
-    transform: scale(0.25);
-    transform-origin: top left; /* Adjust the origin as needed */
 }
